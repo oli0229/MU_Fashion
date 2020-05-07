@@ -1,0 +1,53 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name: Carrer Work
+    Version: 1.0
+
+-----------------------------------------------------------------------------------
+    
+    CSS INDEX
+    ===================
+	
+    01. Theme default CSS
+    02. Header CSS
+    03. Banner CSS
+    04. About CSS
+    05. Product CSS
+    07. Brand CSS
+    08. Mobile Menu CSS
+    09. Trainig and Meeting CSS
+    10. Contact CSS
+    11. Certificate CSS
+    12. Footer CSS
+    13. Company Profile CSS
+    14. Compliance CSS
+
+-----------------------------------------------------------------------------------*/
+
+
+//=Main scss
+@import "basic/variables";
+@import "basic/mixins";
+@import "basic/common";
+
+//=Section scss
+@import "sections/header";
+@import "sections/banner";
+@import "sections/about";
+@import "sections/product";
+@import "sections/single-brand";
+@import "sections/mobile-menu";
+@import "sections/tranning-and-meeting";
+@import "sections/contact";
+@import "sections/certificate";
+@import "sections/team";
+@import "sections/footer";
+
+//=Pages scss
+@import "pages/company-profile";
+@import "pages/compliance";
+
+
+
+
+

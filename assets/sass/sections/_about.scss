@@ -1,0 +1,244 @@
+/*----------------------------------------*/
+/*  04. About CSS
+/*----------------------------------------*/
+.about-img{
+    //Responsive
+    @media #{$tablet-device}{
+        text-align: center;
+    }
+    @media #{$large-mobile}{
+        text-align: center;
+    }
+}
+.about-area{
+    //Responsive
+    @media #{$tablet-device}{
+        text-align: center;
+    }
+    @media #{$large-mobile}{
+        text-align: center;
+    }
+    .text{
+        //Responsive
+        @media #{$large-mobile}{
+            font-size: 14px;
+        }
+    }
+    .feature{
+        margin: 75px 0;
+        //Responsive
+        @media #{$laptop-device}{
+            margin: 35px 0;
+        }
+        @media #{$desktop-device}{
+            margin: 35px 0;
+        }
+        @media #{$tablet-device}{
+            margin: 35px 0;
+        }
+        @media #{$large-mobile}{
+            margin: 30px 0;
+        }
+        .single-feature{
+            text-align: center;
+            .feature-icon{
+                margin-bottom: 17px;
+                //Responsive
+                @media #{$tablet-device}{
+                    margin-bottom: 10px;
+                }
+                @media #{$large-mobile}{
+                    margin-bottom: 10px;
+                }
+            }
+            .feature-text{
+                color: $primary;
+                text-transform: uppercase;
+                //Responsive
+                @media #{$tablet-device}{
+                    font-size: 14px;
+                }
+                @media #{$large-mobile}{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+.confidence-in-texttiles-content{
+    p{
+        //Responsive
+        @media #{$large-mobile}{
+            font-size: 14px;
+        }
+    }
+}
+
+/*---Company Info---*/
+.ic-company-info{
+    position: relative;
+
+    &.bg-image{
+        background-image:url(../images/company-profile-bg-2.jpg) ;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: 1;
+
+        &::after{
+            content:"";
+            position: absolute;
+            top:0;
+            left:0;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            background: rgba(27,168,121,0.9);
+            background: -moz-linear-gradient(left, rgba(27,168,121,0.9) 0%, rgba(144,56,141,0.9) 100%);
+            background: -webkit-gradient(left top, right top, color-stop(0%, rgba(27,168,121,0.9)), color-stop(100%, rgba(144,56,141,0.9)));
+            background: -webkit-linear-gradient(left, rgba(27,168,121,0.9) 0%, rgba(144,56,141,0.9) 100%);
+            background: -o-linear-gradient(left, rgba(27,168,121,0.9) 0%, rgba(144,56,141,0.9) 100%);
+            background: -ms-linear-gradient(left, rgba(27,168,121,0.9) 0%, rgba(144,56,141,0.9) 100%);
+            background: linear-gradient(to right, rgba(27,168,121,0.9) 0%, rgba(144,56,141,0.9) 100%);
+        }
+
+        @media #{$max991} {
+            .row{
+                flex-direction: column-reverse;
+            }
+        }
+
+        .company-info-img{
+            img{
+                box-shadow: none !important;
+                float: none !important;
+                @media #{$max991} {
+                    width: 100%;
+                }
+            }
+
+            @media #{$max991} {
+
+                margin: 0 0 30px 0 !important;
+            }
+
+        }
+
+    }
+
+    .home-company-info{
+        h2{
+            font-size: 48px;
+            line-height: 54px;
+            color:#fff;
+            margin-bottom: 40px;
+            font-weight: 800;
+
+            @media #{$max991} {
+                font-size: 42px;
+                line-height: 42px;
+            }
+
+            @media #{$max575} {
+                font-size: 32px;
+                line-height: 32px;
+            }
+
+            span{
+                display: block;
+                font-weight: 400;
+            }
+        }
+
+        p{
+            color:#fff;
+            margin-bottom: 40px;
+        }
+
+    }
+
+    .ic-company-info-inner{
+        position: relative;
+        .company-info-content{
+            ul.slick-dots{
+                li {
+                    display: inline-block;
+                    margin: 0 4px;
+                    &.slick-active{
+                        button{
+                            background-color: $primary;
+                            color: $primary;
+                        }
+                    }
+                    button {
+                        border: none;
+                        width: 16px;
+                        height: 16px;
+                        background: $secondary;
+                        color: $secondary;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+        .row{
+            .col-md-6{
+                &:first-child{
+                    //Responsive
+                    @media #{$large-mobile}{
+                        order:2;
+                    }
+                }
+                &:last-child{
+                    //Responsive
+                    @media #{$large-mobile}{
+                        order:1;
+                    }
+                }
+            }
+        }
+        .single-company-info{
+            margin-bottom: 31px;
+            //Responsive
+            @media #{$tablet-device}{
+                margin-bottom: 21px;
+            }
+            @media #{$large-mobile}{
+                margin-bottom: 21px;
+                text-align: center;
+            }
+            h2{
+                color: $primary;
+                font-weight: 500;
+                //Responsive
+                @media #{$tablet-device}{
+                    font-size: 22px;
+                }
+                @media #{$large-mobile}{
+                    font-size: 22px;
+                } 
+            }
+            p{
+                //Responsive
+                @media #{$tablet-device}{
+                    font-size: 14px;
+                }
+                @media #{$large-mobile}{
+                    font-size: 14px;
+                } 
+            }
+        }
+        .company-info-img{
+            position: relative;
+            z-index: 2;
+            margin: 0 15px;
+            img{
+                box-shadow: -5px 0px 9.5px 0.5px rgba(39, 39, 39, 0.2); 
+                float: right;                 
+            }
+        }
+        .company-info-img-slider{
+        }
+    }
+}

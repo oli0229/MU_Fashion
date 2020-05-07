@@ -1,0 +1,43 @@
+
+
+//== Site Color
+$black: #000;
+$white: #fff !default;
+$primary: #1ba879 !default;
+$secondary: #90388d !default;
+$text-color: #0c0d0f !default;
+$bg-grey: #f9f9f9 !default;
+//== Site Form Color
+$form-color:#c8c8c8 !default;
+$form-btn-hover: #444 !default;
+
+//== Site Font
+$body-font: "Graphik", sans-serif;
+$heading-font:"Graphik", sans-serif;
+//== Site Transition
+$transition: all 0.3s ease 0s;
+$transition-long: all 0.5s ease 0s;
+//== Site Responsive
+$laptop-device: "only screen and (max-width: 1499.98px) and (min-width: 1200px)";
+$desktop-device: "only screen and (max-width: 1199.98px) and (min-width: 992px)";
+$tablet-device: "only screen and (max-width: 991.98px) and (min-width: 768px)";
+$large-mobile: "only screen and (max-width: 767.98px)";
+$small-mobile: "only screen and (max-width: 575.98px)";
+$extra-small-mobile: "only screen and (max-width: 479px)";
+
+
+
+$min992: "only screen and (min-width: 992px)";
+$min576: "only screen and (min-width: 576px)";
+$max991_to_min768: "screen and (max-width: 991px) and (min-width: 768px)";
+
+$max1650: "only screen and (max-width: 1650px)";
+$max1200: "only screen and (max-width: 1280px)";
+$max1199: "only screen and (max-width: 1199.98px)";
+$max991: "only screen and (max-width: 991.98px)";
+$max767: "only screen and (max-width: 767.98px)";
+$max640: "only screen and (max-width: 640px)";
+$max575: "only screen and (max-width: 575.98px)";
+$max480: "only screen and (max-width: 480px)";
+$max375: "only screen and (max-width: 375px)";
+$max320: "only screen and (max-width: 320px)";

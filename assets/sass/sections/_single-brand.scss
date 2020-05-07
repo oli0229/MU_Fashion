@@ -1,0 +1,34 @@
+/*----------------------------------------*/
+/*  07. Brand CSS
+/*----------------------------------------*/
+.single-brand{
+    text-align: center;
+    padding-top: 10px;
+    img{
+        padding: 0 20px;
+    }
+    &:hover{
+        img{
+            box-shadow: 0 0 16px 4px rgba(132, 118, 132, .1);
+            transition: all .3s ease;
+        }
+    }
+}
+
+/*---Customer Section---*/
+.section-customer{
+    padding-bottom: 130px;
+    //Responsive
+    @media #{$laptop-device}{
+        padding-bottom: 90px;
+    }
+    @media #{$desktop-device}{
+        padding-bottom: 60px;
+    }
+    @media #{$tablet-device}{
+        padding-bottom: 30px;
+    }
+    @media #{$large-mobile}{
+        padding-bottom: 20px;
+    }
+}

@@ -1,0 +1,35 @@
+/*----------------------------------------*/
+/*  14. Compliance CSS
+/*----------------------------------------*/
+.comapny-section-hd{
+    .col-md-6:last-child .company-section figure{               //Responsive
+        @media #{$large-mobile}{
+            margin-bottom: 0;
+        }
+    }
+    .company-section{ 
+        figure{
+            margin-bottom: 22px;
+            img{
+                margin-bottom: 20px;
+                //Responsive
+                @media #{$tablet-device}{
+                    margin-bottom: 15px;
+                }
+                @media #{$large-mobile}{
+                    margin-bottom: 15px;
+                }
+            }
+            figcaption{
+               font-size: 24px;
+               //Responsive
+                @media #{$tablet-device}{
+                    font-size: 20px;
+                }
+                @media #{$large-mobile}{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,153 @@
+/*----------------------------------------*/
+/*  12. Footer CSS
+/*----------------------------------------*/
+footer{
+    .top-footer{
+        background-image: url('../images/footer-bg.png');
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        background-size: cover;
+    }
+    .bottom-footer{
+        padding: 27px 15px;
+        //Responsive
+        @media #{$large-mobile}{
+            font-size: 14px;
+        }
+    }
+}
+
+/*=========================
+    Start Footer Widget
+===========================*/
+.footer-widget{
+    //Responsive
+    @media #{$small-mobile}{
+        margin-bottom: 35px;
+    }
+    &.column__a{
+        //Responsive
+        @media #{$desktop-device}{
+            width: 370px;
+            text-align: center;
+            margin-bottom: 40px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @media #{$tablet-device}{
+            width: 370px;
+            text-align: center;
+            margin-bottom: 40px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @media #{$large-mobile}{
+            margin-bottom: 35px;
+        }
+    }
+    .footer-logo{
+        margin-bottom: 38px;
+        //Responsive
+        @media #{$desktop-device}{
+            margin-bottom: 30px;
+        }
+        @media #{$tablet-device}{
+            margin-bottom: 30px;
+        }
+        @media #{$large-mobile}{
+            margin-bottom: 30px;
+        }
+    }
+    .footer-title{
+        font-weight: 500;
+        color: $secondary;
+        margin-bottom: 37px;
+        //Responsive
+        @media #{$desktop-device}{
+            margin-bottom: 25px;
+        }
+        @media #{$tablet-device}{
+            margin-bottom: 25px;
+        }
+        @media #{$large-mobile}{
+            margin-bottom: 25px;
+        }
+    }
+    .footer-content{
+        .single-content{
+            margin-bottom: 14px;
+            h5{
+                font-weight: 600;
+                margin-bottom: 4px;
+                &.line-height-19{
+                    line-height: 1.9;
+                    //Responsive
+                    @media #{$large-mobile}{
+                        font-size: 14px;
+                    }
+                }
+            }
+            p{
+                //Repsonsive
+                @media #{$large-mobile}{
+                    font-size: 14px;
+                }
+            }
+        }
+        .quick-link{
+            ul{
+                li{
+                    margin: 0 0 11px;
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                    a{
+                        padding: 2px 0;
+                        line-height: 1;
+                        //Repsonsive
+                        @media #{$large-mobile}{
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+        .social-link{
+            ul{
+                li{
+                    margin-bottom: 8px;
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                    a{
+                        line-height: 1;
+                        //Repsonsive
+                        @media #{$large-mobile}{
+                            font-size: 14px;
+                        }
+                        i{
+                            margin-right: 40px;
+                            font-size: 18px;
+                            //Responsive
+                            @media #{$desktop-device}{
+                                margin-right: 20px;
+                            }
+                            @media #{$tablet-device}{
+                                margin-right: 20px;
+                            }
+                            @media #{$large-mobile}{
+                                margin-right: 20px;
+                            }
+                        }
+                        &:hover{
+                            color: $primary;
+                            i{
+                                color: $primary;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

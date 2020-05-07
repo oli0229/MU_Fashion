@@ -1,0 +1,92 @@
+.ic-team-section{
+  background: #F9F9F9;
+
+  .ic-item{
+
+    @media #{$max991} {
+      margin-bottom: 30px;
+    }
+
+    &:hover{
+
+      .member-thumbnail .social-icon {
+        visibility: visible;
+        opacity: 1;
+        @include transform(perspective(40px)translateZ(0));
+      }
+
+      .member-thumbnail .img img{
+        opacity: .4;
+      }
+
+    }
+
+    .member-thumbnail {
+      position: relative;
+
+      .img{
+        background-color: #000;
+        img{
+          width: 100%;
+        }
+      }
+
+      .social-icon {
+        position: absolute;
+        bottom: 40px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        opacity: 0;
+        visibility: hidden;
+        @include transform(perspective(40px)translateZ(10px));
+        @include transition(all .4s ease);
+
+        ul li {
+          display: inline-block;
+
+          a {
+            display: flex;
+            width: 40px;
+            height: 40px;
+            font-size: 20px;
+            justify-content: center;
+            align-items: center;
+            color: $white;
+            border-radius: 50%;
+            &:hover{
+              background: $primary;
+
+            }
+          }
+
+        }
+      }
+    }
+
+    .ic-content{
+
+      padding: 20px;
+      background: #fff;
+      text-align: center;
+
+      h3{
+        font-weight: 800;
+        color:$primary;
+
+        &:hover a{
+          color:$secondary;
+        }
+
+      }
+
+      span{
+        color:$secondary;
+      }
+
+    }
+
+  }
+
+}

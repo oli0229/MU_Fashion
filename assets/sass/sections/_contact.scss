@@ -1,0 +1,113 @@
+/*----------------------------------------*/
+/*  10. Contact CSS
+/*----------------------------------------*/
+#map{
+    height: 768px;
+    //Responsive
+    @media #{$laptop-device}{
+        height: 600px;
+    }
+    @media #{$desktop-device}{
+        height: 550px;
+    }
+    @media #{$tablet-device}{
+        height: 500px;
+    }
+    @media #{$large-mobile}{
+        height: 400px;
+    }
+    iframe{
+        height: 100%;
+    }
+}
+.section-contact{
+    h1{
+        margin-bottom: 24px;
+        //Responsive
+        @media #{$tablet-device}{
+            margin-bottom: 19px;
+        }
+        @media #{$large-mobile}{
+            margin-bottom: 19px;
+        }
+    }
+    .icon-6{
+        bottom: 10px;
+        top: auto;
+    }
+}
+.contact-content{
+    .single-block{
+        margin-bottom: 30px;
+        //Responsive
+        @media #{$tablet-device}{
+            margin-bottom: 19px;
+        }
+        @media #{$large-mobile}{
+            margin-bottom: 19px;
+        }
+        h5{
+            margin-bottom: 5px;
+        }
+        p{
+            //Responsive
+            @media #{$large-mobile}{
+                font-size: 14px;
+            }
+        }
+    }
+    .ic-contact-table{
+        tr td{
+            padding-bottom: 15px;
+            vertical-align: top;
+            //Reponsive
+            @media #{$large-mobile}{
+                font-size: 14px;
+                padding-bottom: 5px;
+            }
+            &:first-child{
+                padding-right: 15px;
+                color: $primary;
+                //Reponsive
+                @media #{$large-mobile}{
+                    padding-right: 5px;
+                }
+            }
+        }
+    }
+}
+
+#contact-form{
+    .row{
+        margin-left: -10px;
+        margin-right: -10px;
+        [class^="col"]{
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+    input,
+    textarea{
+        padding: 13px 20px;
+        background-color: #f0f0f0;
+        border: none;
+        margin-bottom: 20px;
+        width: 100%;
+        border-radius: 5px;
+        @include placeholder-color($text-color);
+    }
+    textarea{
+        height: 150px;
+    }
+    input[type="submit"]{
+        width: auto;
+        background-color: $secondary;
+        color: $white;
+        margin-bottom: 0;
+        padding: 13px 25px;
+        transition: all .3s ease;
+        &:hover{
+            background-color: #782075;
+        }
+    }
+}

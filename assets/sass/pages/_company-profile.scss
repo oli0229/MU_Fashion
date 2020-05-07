@@ -1,0 +1,206 @@
+/*----------------------------------------*/
+/*  13. Company Profile CSS
+/*----------------------------------------*/
+.company-general-info{
+    .ic-icon-layer{
+        .icon-5{
+            right: 15px;
+            bottom: 15px;
+            width: 94px;
+            height: 200px;
+        }
+        .icon-6{
+            right: -184px;
+            top: -184px;
+            width: 368px;
+            height: 368px;
+        }
+    }
+}
+.company-policy-img{
+    .single-company-policy-img{
+        //Responsive
+        @media #{$large-mobile}{
+            margin-bottom: 30px
+        }
+    }
+}
+.company-policy-content{
+    //Responsive
+    @media #{$large-mobile}{
+        text-align: center;
+    }
+    h2{
+        margin-bottom: 10px;
+    }
+    .text{
+        //Responsive
+        @media #{$large-mobile}{
+            font-size: 14px;
+        }
+    }
+}
+.company-general-info {
+    table{
+        td {
+            vertical-align: text-bottom;
+            transition: all .3s ease;
+            padding: 10px 0;
+            min-width: 353px;
+            //Responsive
+            @media #{$desktop-device}{
+                padding: 5px 0;
+            }
+            @media #{$tablet-device}{
+                padding: 5px 0;
+            }
+            @media #{$large-mobile}{
+                padding: 5px 0;
+                font-size: 14px;
+            }
+            &:first-child {
+                color: $secondary;
+                min-width: 160px;
+                &:hover{
+                    color: $primary;
+                }
+            }
+            &:last-child {
+                padding-left: 240px;
+                //Responsive
+                @media #{$laptop-device}{
+                    padding-left: 10px;
+                }
+                @media #{$desktop-device}{
+                    padding-left: 10px;
+                }
+                @media #{$tablet-device}{
+                    padding-left: 10px;
+                }
+                @media #{$large-mobile}{
+                    padding-left: 10px;
+                }
+            }
+        }
+    }
+}
+.confidence-in-texttiles-content{
+    //Responsive
+    @media #{$large-mobile}{
+        margin-bottom: 30px;
+        text-align: center;
+    }
+}
+
+
+
+.ic-company-equipments{
+
+    table{
+        border-collapse: collapse;
+        margin: 0 0 4rem;
+        width: 100%;
+
+        @media #{$max991} {
+            min-width: 1000px;
+        }
+
+        tr{
+            border:none;
+
+            th{
+                font-weight: 700;
+                padding: 10px 10px;
+                color:$secondary;
+            }
+            td{
+                padding: 10px 10px;
+                font-weight: 600;
+            }
+        }
+
+    }
+
+}
+
+
+.ic-video{
+    .ic-video-content{
+        padding: 150px 0;
+        background-image: url("../images/video-bg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        z-index: 1;
+
+        @media #{$max1200} {
+            padding: 120px 0;
+        }
+
+        @media #{$max767} {
+            padding: 100px 0;
+        }
+
+        h1{
+            font-size: 48px;
+            line-height: 52px;
+            font-weight: 800;
+            color:#fff;
+
+            @media #{$max1200} {
+                font-size: 42px;
+                line-height: 46px;
+            }
+
+            @media #{$max991} {
+                font-size: 36px;
+                line-height: 38px;
+                padding: 0 50px;
+            }
+
+            @media #{$max767} {
+                font-size: 32px;
+                line-height: 36px;
+                padding: 0 40px;
+            }
+
+        }
+
+        a{
+            position: relative;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+
+            i{
+                font-size: 72px;
+                color:#fff;
+
+                @media #{$max767} {
+                    font-size: 52px;
+                }
+
+            }
+
+            &:hover{
+                @include scale(1.05);
+            }
+
+        }
+
+
+        &::after{
+            position: absolute;
+            content:"";
+            top:0;
+            left: 0;
+            height: 100%;
+            width:100%;
+            background: rgba(0,0,0,.3);
+            z-index: -1;
+        }
+
+    }
+}
+

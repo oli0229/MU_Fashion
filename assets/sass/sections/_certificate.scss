@@ -1,0 +1,35 @@
+/*----------------------------------------*/
+/*  11. Certificate CSS
+/*----------------------------------------*/
+.ic-certificate{
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 4px 14.72px 1.28px rgba(5, 9, 15, 0.05);
+    margin-bottom: 30px;
+    .icon-7{
+        top:80px;
+    }
+    .icon-6{
+        top: 20px;
+    }
+    .ic-inner{
+        background-color: rgb(255, 255, 255);
+        .heading-title{
+            color: $primary;
+            font-weight: 400;
+            padding: 15px 20px 0;
+        }
+    }
+}
+.certificate-content{
+    padding: 0 40px 40px;
+    .text{
+
+    }
+    .certificate-img{
+        margin-top: 20px;
+        img{
+                                                        
+        }
+    }
+}
